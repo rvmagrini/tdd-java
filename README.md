@@ -1,6 +1,5 @@
 # Basic Testing Tutorial for Java
-## Unit Testing, Integration Testing, JUnit5 Framework
-## Assertions with AssertJ and Mocking with Java Mockito
+## Unit Testing, Integration Testing, JUnit5 Framework, Assertions with AssertJ and Mocking with Java Mockito
 
 ## Process:
 
@@ -15,3 +14,7 @@ TASKS:
 TASKS:
 - [2.1] Configure In-Memory Database for Testing
 - [2.2] Test when Email exists and when it does not exist
+
+### 3: [TESTING SERVICE]
+TASKS:
+- [3.1] Set up Service Testing (Mock, Autocloseable)
