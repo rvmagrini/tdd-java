@@ -1,8 +1,8 @@
 package com.rvmagrini.testing.student;
 
 import com.rvmagrini.testing.student.exception.BadRequestException;
+import com.rvmagrini.testing.student.exception.StudentNotFoundException;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.ArgumentCaptor;
@@ -74,7 +74,15 @@ class StudentServiceTest {
     }
 
     @Test
-    @Disabled
-    void canDeleteStudent() {
+    void canDeleteStudent() throws StudentNotFoundException {
+        // given
+        Long studentId = 10L;
+        given(studentRepository.existsById(studentId)).willReturn(true);
+
+        // when
+        studentService.deleteStudent(studentId);
+
+        // then
+        verify(studentRepository).deleteById(studentId);
     }
 }

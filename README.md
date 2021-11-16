@@ -22,3 +22,4 @@ TASKS:
 - [3.2] Refactor Autocloseable and test if Service can getAllStudents
 - [3.3] Test if Service passes expected argument to addStudent
 - [3.4] Test if Service throws expected Exception when Email is already taken
+- [3.5] Test if Service can call deleteStudent
