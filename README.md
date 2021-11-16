@@ -20,6 +20,8 @@ TASKS:
 TASKS:
 - [3.1] Set up Service Testing (Mock, Autocloseable)
 - [3.2] Refactor Autocloseable and test if Service can getAllStudents
-- [3.3] Test if Service passes expected argument to addStudent
-- [3.4] Test if Service throws expected Exception when Email is already taken
-- [3.5] Test if Service can call deleteStudent
+- [3.3] Test if addStudent Service passes expected argument to save Repository
+- [3.4] Test if addStudent Service throws expected Exception when Email is already taken and if Repository never saving anything in this condition
+- [3.5] Test if deleteStudent Service can call deleteById Repository
+- [3.6] Test if deleteStudent Service throws expected Exception when id was not found and if Repository is never deleting anything in this condition
+

@@ -77,6 +77,7 @@ class StudentServiceTest {
     void canDeleteStudent() throws StudentNotFoundException {
         // given
         Long studentId = 10L;
+
         given(studentRepository.existsById(studentId)).willReturn(true);
 
         // when
@@ -84,5 +85,22 @@ class StudentServiceTest {
 
         // then
         verify(studentRepository).deleteById(studentId);
+    }
+
+    @Test
+    void willThrowWhenStudentNotFound() {
+        // given
+        Long studentId = 10L;
+
+        given(studentRepository.existsById(studentId)).willReturn(false);
+
+        // when
+        // then
+        assertThatThrownBy(() -> studentService.deleteStudent(studentId))
+                .isInstanceOf(StudentNotFoundException.class)
+                .hasMessageContaining("Student with id " + studentId + " does not exist");
+
+        verify(studentRepository, never()).deleteById(any());
+
     }
 }
