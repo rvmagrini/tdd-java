@@ -19,4 +19,5 @@ TASKS:
 #### Important Annotations: @ExtendWith(MockitoExtension.class), @Mock
 TASKS:
 - [3.1] Set up Service Testing (Mock, Autocloseable)
-- [3.2] Refactor Autocloseable and test if can getAllStudents
+- [3.2] Refactor Autocloseable and test if Service can getAllStudents
+- [3.3] Test if Service pass the right argument to addStudent
