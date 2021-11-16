@@ -1,3 +1,8 @@
-# Testing
-## Basic Testing Tutorial for Java
-### Unit Testing, Integration Testing, JUnit5 Framework, Assertions and Mocking with Java Mockito
+# Basic Testing Tutorial for Java
+## Unit Testing, Integration Testing, JUnit5 Framework, Assertions and Mocking with Java Mockito
+
+## Process:
+
+### 1: [INITIALIZING]
+TASKS:
+- [1.1] Create Spring Boot Project
