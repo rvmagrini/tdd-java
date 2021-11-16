@@ -10,11 +10,13 @@ TASKS:
 - [1.3] Create Repository, Service and Controller Units
 
 ### 2: [TESTING REPOSITORY]
-### Annotations: @DataJPATest, @Autowired, @Test
+#### Important Annotations: @DataJpaTest, @Autowired
 TASKS:
 - [2.1] Configure In-Memory Database for Testing
 - [2.2] Test when Email exists and when it does not exist
 
 ### 3: [TESTING SERVICE]
+#### Important Annotations: @ExtendWith(MockitoExtension.class), @Mock
 TASKS:
 - [3.1] Set up Service Testing (Mock, Autocloseable)
+- [3.2] Refactor Autocloseable and test if can getAllStudents
