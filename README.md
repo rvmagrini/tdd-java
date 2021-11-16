@@ -6,3 +6,4 @@
 ### 1: [INITIALIZING]
 TASKS:
 - [1.1] Create Spring Boot Project
+- [1.2] Create Entity
